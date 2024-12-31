@@ -5,14 +5,17 @@ public class Patient {
     private int id;
     private String name;
     private int age;
-    private char gender;
+    private String gender;
     private String about;
-    public Patient(String name, int age, char gender, String about) {
+    public Patient(String name, int age, String gender, String about) {
         id = count++;
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.about = about;
+    }
+    public Patient(){
+
     }
     public int getId() {
         return id;
